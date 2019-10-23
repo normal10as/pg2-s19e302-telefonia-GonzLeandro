@@ -2,8 +2,8 @@ Imports System
 
 Module MAIN
     Sub Main(args As String())
-        equipo()
 
+        linea()
 
     End Sub
 End Module

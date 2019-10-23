@@ -1,5 +1,4 @@
-Public Class Marca
-
+Public MustInherit Class Marca
     Public Sub New(nombreMarca As String)
         Me.NombreMarca = nombreMarca
     End Sub
@@ -15,10 +14,8 @@ Public Class Marca
         End Set
     End Property
 
-    Public Function toString() As String
+    Public Overrides Function ToString() As String
         Return NombreMarca
     End Function
-
-
 
 End Class

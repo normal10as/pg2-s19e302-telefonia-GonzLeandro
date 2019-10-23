@@ -1,5 +1,7 @@
-﻿Public Class Modelo
-    Public Sub New(nombreModelo As String)
+﻿Public MustInherit Class Modelo
+    Inherits Marca
+    Public Sub New(nombreMarca As String, nombreModelo As String)
+        MyBase.New(nombreMarca)
         Me.NombreModelo = nombreModelo
     End Sub
 
@@ -15,8 +17,7 @@
         End Set
     End Property
 
-    Public Function toString() As String
-        Return NombreModelo
+    Public Overrides Function ToString() As String
+        Return MyBase.ToString & " " & NombreModelo
     End Function
-
 End Class

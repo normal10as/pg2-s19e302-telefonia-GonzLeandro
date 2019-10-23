@@ -1,12 +1,12 @@
 ﻿Imports TelefoniaEntidades
 Module MarcaTest
-    Public Sub marca()
+    'Public Sub marca()
 
-        Dim samsung As New Marca("Samsung")
+    '    Dim samsung As New Marca("Samsung")
 
-        Console.WriteLine("Marca: " & samsung.NombreMarca)
+    '    Console.WriteLine("Marca: " & samsung.NombreMarca)
 
-        Console.WriteLine(samsung.toString)
+    '    Console.WriteLine(samsung.toString)
 
-    End Sub
+    'End Sub
 End Module
